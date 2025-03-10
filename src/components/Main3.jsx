@@ -1,4 +1,4 @@
-import React from 'react'
+
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { Link } from 'react-router-dom';
 function Main3() {

@@ -1,20 +1,22 @@
 
-import React from 'react'
+import PropTypes from 'prop-types';
 
-function Marquee({text}) {
+const Marquee = ({ text }) => {
   return (
-    <div >
-      <div className='bg-primary p-1 text-light fw-bold shadow lg:text-2xl text-lg' >
-        <marquee behavior="scroll" direction="left">
-
-        {text}
-
-        </marquee>
-
+    <div>
+      <div className='bg-primary p-1 text-light fw-bold shadow lg:text-2xl text-lg'>
+        <div className="marquee">
+          <div className="marquee-content">
+            {text}
+          </div>
+        </div>
       </div>
-    
     </div>
-  )
-}
+  );
+};
 
-export default Marquee
+Marquee.propTypes = {
+  text: PropTypes.string.isRequired,
+};
+
+export default Marquee;

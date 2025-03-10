@@ -1,4 +1,3 @@
-import React from 'react';
 
 
 function Main1() {
@@ -6,8 +5,8 @@ function Main1() {
     <div className='lg:p-5 p-3 d-flex mt-4 mb-5 shadow bg-light flex-column align-items-center' style={{ backgroundColor: "whitesmoke" }}>
       <div className='d-flex flex-column fw-bolder justify-content-center align-items-center'>
         <div className='flex lg:flex-row flex-col items-center justify-center gap-2 w-full lg:p-5 text-center'>
-          <span className='text-dark mt-3 text-2xl lg:text-5xl'>Today's Vision</span>
-          <span className='text-primary text-2xl lg:text-5xl lg:mt-3'>Tomorrow's Technology</span>
+          <span className='text-dark mt-3 text-2xl lg:text-5xl'>Today&apos;s Vision</span>
+          <span className='text-primary text-2xl lg:text-5xl lg:mt-3'>Tomorrow&apos;s Technology</span>
         </div>
       </div>
       <hr className='w-full mt-3' />
@@ -24,7 +23,7 @@ function Main1() {
           </div>
           <p className='mt-4 text-justify text-lg'>
             Dear Sir/Madam, <br />
-            "Welcome to Springdale Public School, where we are dedicated to nurturing young minds and shaping future leaders. At Springdale, we believe in fostering an environment that encourages academic excellence, creativity, and holistic development. Our commitment to quality education and student well-being is reflected in our state-of-the-art facilities and our dedicated faculty. We strive to create a learning experience that empowers students to reach their full potential and excel in all aspects of life. I invite you to explore our website and learn more about our vibrant school community. Together, let’s work towards a brighter future for every student."
+            &quot;Welcome to Dharam Public School, where we are dedicated to nurturing young minds and shaping future leaders. At Springdale, we believe in fostering an environment that encourages academic excellence, creativity, and holistic development. Our commitment to quality education and student well-being is reflected in our state-of-the-art facilities and our dedicated faculty. We strive to create a learning experience that empowers students to reach their full potential and excel in all aspects of life. I invite you to explore our website and learn more about our vibrant school community. Together, let’s work towards a brighter future for every student.&quot;
           </p>
         </div>
       </div>

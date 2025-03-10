@@ -1,7 +1,5 @@
-import React from 'react'
 
 import qrcode from '../assets/qr.png'
-import { Link } from 'react-router-dom'
 
 function Checkout() {
     return (

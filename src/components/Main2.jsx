@@ -1,9 +1,10 @@
-import React from 'react';
+
 
 
 
 function Main2() {
   const downloadBroucher = () => {
+    const brochu = 'https://www.wolverhampton.gov.uk/sites/default/files/2023-01/Job%20ref%203-2023%20SDP%20-%20Recruitment%20brochure.pdf';
     const anchor = document.createElement('a');
     anchor.href = brochu;
     anchor.download = 'broucher.pdf';

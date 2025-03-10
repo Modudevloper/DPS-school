@@ -1,5 +1,4 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AccessTime, LocationOn, GetApp } from '@mui/icons-material';
 
