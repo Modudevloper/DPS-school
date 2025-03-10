@@ -19,7 +19,7 @@ function Footer() {
         <div className="container text-center text-md-start mt-5">
           <div className="row mt-3">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Dharam Public School</h6>
+              <h6 className="text-uppercase fw-bold mb-4">New DPS School</h6>
               <p>
                 Address: <br />
                 Village Deeghot, <br />
@@ -33,13 +33,13 @@ function Footer() {
                 Email: ndpsdeeghotpalwal@gmail.com
               </p>
               <h6 className="text-uppercase fw-bold mb-3 mt-3">Follow Us</h6>
-              <a href="" target='_blank' className='text-3xl text-pink-700'>
+              <a href="https://www.instagram.com/newdpsdeeghot?igsh=dm1zZjFvbXdoeTk5&utm_source=qr" target='_blank' className='text-3xl text-pink-700'>
                 <InstagramIcon />
               </a>
               <a href="" target='_blank' className='text-3xl text-blue-500 ml-3'>
                 <TwitterIcon />
               </a>
-              <a href="" target='_blank' className='text-3xl text-blue-700 ml-3'>
+              <a href="https://www.facebook.com/share/15TCnz55jc/?mibextid=wwXIfr" target='_blank' className='text-3xl text-blue-700 ml-3'>
                 <FacebookIcon />
               </a>
             </div>
@@ -47,9 +47,14 @@ function Footer() {
               <h6 className="text-uppercase fw-bold mb-4">Support</h6>
               <div className='flex flex-col gap-3'>
                 <p>
-                  Name: Mr. Inderjeet Tanwar (chairman)<br />
+                <p className='text-font fw-bold'>Director</p>
+                  Name: Mr. Inderjeet Tanwar<br />
                   Phone: +91 8708188737 <br />
-                  Name: Mrs. Sheela Bainsla (Principal) <br />
+                  <p className='text-font fw-bold'>Chairman</p>
+                  Name: Mr. Sunil Adhana<br />
+                  Phone: +91 8708517363
+                  <p className='text-font fw-bold'>Principal</p>
+                  Name: Mrs. Sheela Bainsla  <br />
                   Phone: +91 8708517363
 
                 </p>
@@ -60,7 +65,7 @@ function Footer() {
         </div>
       </section>
       <div className="text-center p-4" style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
-        © 2024 Springdale Public School. All rights reserved.
+        © 2024 New DPS School. All rights reserved.
       </div>
     </footer>
   );

@@ -62,3 +62,26 @@
 .parallax-container:hover .parallax-bg {
   transform: translate3d(0, -60%, 0); 
 }
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-top {
+  animation: slideInTop 1s ease-out;
+}
+
+.zoom-on-hover {
+  transition: transform 0.5s ease;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.1);
+}

@@ -13,7 +13,7 @@ function Contact() {
     };
 
     return (
-        <div className="bg-gradient-to-b from-blue-50 to-white min-h-screen">
+        <div className="bg-gradient-to-b from-blue-50 to-white min-h-screen mt-[9%]">
             
             <div className='relative h-[90vh] bg-cover bg-center' style={{ backgroundImage: "url('https://springdale.peelschools.org/images/b82d5de2-8621-4a01-9259-2a45f8789911')" }}>
                 <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center'>

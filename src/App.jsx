@@ -47,9 +47,8 @@ function App() {
             element={
               <div>
                 <Coursoul />
-                <Marquee text={`"Welcome to Springdale Public School, where we nurture young minds for a brighter future."`} />
+                <Marquee text={`"Welcome to New DPS School, where we nurture young minds for a brighter future."`} />
                 <Timer />
-                <Marquee text={`"Join us for our Annual Science Exhibition, where students showcase innovative science projects and experiments."`} />
                 <Main2 />
                 <Checkout />
                 <Main1 />
