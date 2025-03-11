@@ -1,3 +1,4 @@
+
 .parallax-container {
   position: relative;
   height: 40rem;
@@ -9,28 +10,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 300%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: translate3d(0, -50%, 0);
-  transition: transform 0.9s ease-out;
-}
-
-.parallax-container:hover .parallax-bg {
-  transform: translate3d(0, -60%, 0); 
-}.parallax-container {
-  position: relative;
-  height: 40rem;
-  overflow: hidden;
-}
-
-.parallax-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 300%; 
+  height: 300%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,29 +20,7 @@
 
 .parallax-container:hover .parallax-bg {
   transform: translate3d(0, -60%, 0);
-}.parallax-container {
-  position: relative;
-  height: 40rem;
-  overflow: hidden;
 }
-
-.parallax-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 300%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: translate3d(0, -50%, 0);
-  transition: transform 0.9s ease-out;
-}
-
-.parallax-container:hover .parallax-bg {
-  transform: translate3d(0, -60%, 0); 
-}
-
 @keyframes slideInTop {
   0% {
     transform: translateY(-100%);
@@ -73,6 +31,11 @@
     opacity: 1;
   }
 }
+
+.slide-in-top {
+  animation: slideInTop 1s ease-out;
+}
+
 
 .slide-in-top {
   animation: slideInTop 1s ease-out;
