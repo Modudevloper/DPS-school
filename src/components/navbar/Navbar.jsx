@@ -29,7 +29,7 @@ function Navbar() {
   return (
     <nav>
       <div
-        className={`container mx-auto p-4 flex justify-between items-center w-full fixed top-0 left-0 z-50 transition-colors duration-300 ${
+        className={` p-4 flex justify-between items-center w-full fixed top-0 left-0 z-50 transition-colors duration-300 ${
           isScrolled
             ? "bg-white text-gray-800 shadow-md"
             : "bg-black bg-opacity-50 text-white backdrop-blur-md"
