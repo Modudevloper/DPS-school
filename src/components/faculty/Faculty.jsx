@@ -1,6 +1,6 @@
 // Import the images at the top of your file
 import chairman from '../../assets/chairman.jpeg';
-// import directorImage from 'C:/Users/s1770/OneDrive/Desktop/school-website-Task/src/assets/director.jpeg'; // Update with the correct path
+import chairman1 from '../../assets/chairman1.jpeg'; // Update with the correct path
 import principal from '../../assets/principal.jpeg'; // Update with the correct path
 
 const aboutData = [
@@ -19,7 +19,7 @@ const aboutData = [
   {
     name: "Mr. Sunil Adhana",
     description: "Chairman",
-    image: chairman, // Use the imported image
+    image: chairman1, // Use the imported image
     quote: "Guiding the institution with wisdom and foresight to achieve excellence in education.",
   },
 ];
