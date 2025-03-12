@@ -1,85 +1,133 @@
+import { motion } from "framer-motion";
+
 const Students = () => {
   const extracurricularActivities = [
-    'Music', 'Dance', 'Drama', 'Art', 'Sports', 'Robotics', 'Debate Club', 'Science Club'
+    "Music",
+    "Dance",
+    "Drama",
+    "Art",
+    "Sports",
+    "Robotics",
+    "Debate Club",
+    "Science Club",
   ];
 
   const clubsAndSocieties = [
-    'Literary Society', 'Environmental Club', 'Astronomy Club', 'Coding Club'
+    "Literary Society",
+    "Environment Club",
+    "Astronomy Club",
+    "Coding Club",
   ];
 
   const achievements = [
-    { name: 'John Smith', achievement: 'National Level Math Olympiad Winner' },
-    { name: 'Sarah Lee', achievement: 'Gold Medalist in State Swimming Championship' },
-    { name: 'Tech Innovators Club', achievement: 'Winners of Inter-School Robotics Competition' }
-  ];
-
-  const studentCouncilMembers = [
-    { role: 'President', name: 'Amy Parker', grade: 'Grade 12', description: 'Amy leads the student council with a vision to enhance student engagement and academic success.' },
-    { role: 'Vice President', name: 'Rajiv Mehta', grade: 'Grade 11', description: 'Rajiv supports the president and coordinates various student initiatives and events.' },
-    { role: 'Secretary', name: 'Lisa Wong', grade: 'Grade 10', description: 'Lisa manages the student council\'s records and communication, ensuring smooth operations.' }
+    { name: "John Smith", achievement: "National Level Math Olympiad Winner" },
+    {
+      name: "Sarah Lee",
+      achievement: "Gold Medalist in State Swimming Championship",
+    },
+    {
+      name: "Tech Innovators Club",
+      achievement: "Winners of Inter-School Robotics Competition",
+    },
   ];
 
   return (
-    <div className="container mx-auto px-4 py-16 bg-gray-100 mt-[9%]">
-      <h1 className="text-5xl font-bold text-center mb-16 text-indigo-800">Student Life at New DPS</h1>
+    <motion.div
+      className="container mx-auto px-4 py-16 bg-gray-100 mt-[9%]"
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 0.5 }}
+    >
+      <h1 className="text-5xl font-bold text-center mb-16 text-indigo-800">
+        Student Life at New DPS
+      </h1>
 
-      <section className="mb-20 bg-white rounded-xl shadow-lg p-8">
-        <h2 className="text-3xl font-semibold mb-6 text-center text-indigo-700">Extracurricular Activities</h2>
+      {/* Extracurricular Activities */}
+      <motion.section
+        className="mb-20 bg-white rounded-xl shadow-lg p-8"
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
+        <h2 className="text-3xl font-semibold mb-6 text-center text-indigo-700">
+          Extracurricular Activities
+        </h2>
         <p className="text-xl text-gray-600 text-center mb-8">
-          Our students engage in a variety of extracurricular activities including:
+          Our students engage in a variety of extracurricular activities
+          including:
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {extracurricularActivities.map((activity, index) => (
-            <div key={index} className="bg-indigo-100 rounded-lg p-4 text-center">
-              <span className="text-lg font-medium text-indigo-700">{activity}</span>
-            </div>
+            <motion.div
+              key={index}
+              className="bg-indigo-100 rounded-lg p-4 text-center"
+              whileHover={{ scale: 1.1 }}
+            >
+              <span className="text-lg font-medium text-indigo-700">
+                {activity}
+              </span>
+            </motion.div>
           ))}
         </div>
-      </section>
+      </motion.section>
 
-      <section className="mb-20 bg-white rounded-xl shadow-lg p-8">
-        <h2 className="text-3xl font-semibold mb-6 text-center text-indigo-700">Clubs and Societies</h2>
+      {/* Clubs and Societies */}
+      <motion.section
+        className="mb-20 bg-white rounded-xl shadow-lg p-8"
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
+        <h2 className="text-3xl font-semibold mb-6 text-center text-indigo-700">
+          Clubs and Societies
+        </h2>
         <p className="text-xl text-gray-600 text-center mb-8">
-          Students can join various clubs and societies to explore their interests:
+          Students can join various clubs and societies to explore their
+          interests:
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {clubsAndSocieties.map((club, index) => (
-            <div key={index} className="bg-green-100 rounded-lg p-4 text-center">
+            <motion.div
+              key={index}
+              className="bg-green-100 rounded-lg p-4 text-center"
+              whileHover={{ scale: 1.1 }}
+            >
               <span className="text-lg font-medium text-green-700">{club}</span>
-            </div>
+            </motion.div>
           ))}
         </div>
-      </section>
+      </motion.section>
 
-      <section className="mb-20">
-        <h2 className="text-3xl font-semibold mb-6 text-center text-indigo-700">Achievements</h2>
+      {/* Achievements */}
+      <motion.section
+        className="mb-20"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+      >
+        <h2 className="text-3xl font-semibold mb-6 text-center text-indigo-700">
+          Achievements
+        </h2>
         <div className="bg-white p-8 rounded-xl shadow-lg">
           <ul className="space-y-4">
             {achievements.map((item, index) => (
-              <li key={index} className="flex items-center">
+              <motion.li
+                key={index}
+                className="flex items-center"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+              >
                 <span className="w-3 h-3 bg-yellow-400 rounded-full mr-3"></span>
                 <span className="font-semibold text-gray-800">{item.name}:</span>
                 <span className="ml-2 text-gray-600">{item.achievement}</span>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
-      </section>
-
-      <section>
-        <h2 className="text-3xl font-semibold mb-6 text-center text-indigo-700">Student Council</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {studentCouncilMembers.map((member, index) => (
-            <div key={index} className="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-              <h3 className="text-xl font-semibold text-indigo-700 mb-2">{member.role}</h3>
-              <p className="text-lg text-gray-800 mb-1">{member.name}</p>
-              <p className="text-md text-gray-600 mb-4">{member.grade}</p>
-              <p className="text-gray-600">{member.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-    </div>
+      </motion.section>
+    </motion.div>
   );
 };
 
